@@ -26,7 +26,7 @@ quantity - product quantity
 id - id of the item in the cart
 ```
 5. **/checkoutCart - checkout cart (GET)**
-6. **/addItemToShop - add item to shop
+6. **/addItemToShop - add item to shop**
 ```
 {
     "title": "Grey Polo",
@@ -39,10 +39,10 @@ quantity - product quantity
 ```
 
 #### Application.properties params
-spring.jpa.hibernate.ddl-auto=create 
-spring.datasource.url=jdbc:mysql://localhost:3306/springSampleAP
-spring.datasource.username=root
-spring.datasource.password=123456
+1. spring.jpa.hibernate.ddl-auto=create 
+2. spring.datasource.url=jdbc:mysql://localhost:3306/springSampleAP
+3. spring.datasource.username=root
+4. spring.datasource.password=123456
 
 #### Installation and deployment guide
 
