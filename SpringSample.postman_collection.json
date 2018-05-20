@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "55295a14-d6af-46be-9ea3-28db2f63b56f",
+		"name": "SpringSample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "showCartItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/showCartItems",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"showCartItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addItemToCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": 1, \"quantity\":2}"
+				},
+				"url": {
+					"raw": "localhost:8080/addItemToCart",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addItemToCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeItemFromCart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": 1}"
+				},
+				"url": {
+					"raw": "localhost:8080/removeItemFromCart",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"removeItemFromCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkoutCart",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": 1}"
+				},
+				"url": {
+					"raw": "localhost:8080/checkoutCart",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"checkoutCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addItemToShop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/addItemToShop",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addItemToShop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showShopItems",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": 1}"
+				},
+				"url": {
+					"raw": "localhost:8080/showShopItems",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"showShopItems"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
